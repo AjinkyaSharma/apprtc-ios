@@ -63,7 +63,7 @@
     [self disconnect];
     self.client = [[ARDAppClient alloc] initWithDelegate:self];
     [self.client setServerHostUrl:SERVER_HOST_URL];
-    [self.client connectToRoomWithId:self.roomName options:nil];
+    [self.client connectToRoomWithId:self.roomName forVideoCall:false options:nil];
     
     [self.urlLabel setText:self.roomUrl];
 }
