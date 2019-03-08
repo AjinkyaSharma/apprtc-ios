@@ -69,6 +69,7 @@ typedef NS_ENUM(NSInteger, ARDAppClientState) {
 // for call configurations such as overriding server choice, specifying codecs
 // and so on.
 - (void)connectToRoomWithId:(NSString *)roomId
+               forVideoCall:(bool)isVideoCall
                     options:(NSDictionary *)options;
 
 // Mute and unmute Audio-In
